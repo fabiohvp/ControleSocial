@@ -1,0 +1,44 @@
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  /* font-size: 14px; */
+  color: #364b60;
+}
+
+.a4 {
+  width: 29.7cm;
+}
+
+.rotate-x {
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  display: inline-block;
+  -ms-filter: fliph;
+  filter: fliph;
+}
+
+.rotate-y {
+  -moz-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  transform: scaleY(-1);
+  display: inline-block;
+  -ms-filter: flipv;
+  filter: flipv;
+}
+
+.spinning {
+  display: inline-block;
+  animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

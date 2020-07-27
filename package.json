@@ -1,0 +1,7 @@
+{
+	"name": "controle-social",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "cd client&yarn dev:nollup"
+	}
+}
