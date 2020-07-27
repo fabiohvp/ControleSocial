@@ -17,16 +17,9 @@ namespace ControleSocial.Controllers
 	[ApiController]
 	public class DWControleSocialController : ControllerBase
 	{
-		private static TypeCreator TypeCreator = new TypeCreator(nameof(DWControleSocialController));
-
 		private static DWControleSocialContext DbContextFactory()
 		{
 			return Settings.ServiceProvider.GetService<DWControleSocialContext>();
-		}
-
-		private static TypeCreator TypeCreatorFactory()
-		{
-			return TypeCreator;
 		}
 
 		private static IWorkflow WorkflowFactory(string name, object[] args, Type dataType)
@@ -85,7 +78,7 @@ namespace ControleSocial.Controllers
 		{
 			var stopwatch = new Stopwatch();
 			stopwatch.Start();
-			var jsonQL = new WorkflowApi.Core.Processor(TypeCreatorFactory, dbContextFactory, WorkflowFactory);
+			var jsonQL = new WorkflowApi.Core.Processor(dbContextFactory, WorkflowFactory);
 
 			if (Request.Headers.ContainsKey("socket-guid"))
 			{
