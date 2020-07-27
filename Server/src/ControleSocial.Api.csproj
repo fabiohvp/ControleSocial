@@ -34,8 +34,8 @@
     <PackageReference Include="Microsoft.VisualBasic" Version="10.3.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <!-- <PackageReference Include="WorkflowApi.Core" Version="1.0.0" /> -->
-		<ProjectReference Include="../../../../../VisualStudio/WorkflowApi.Core/WorkflowApi.Core.csproj" />
+    <PackageReference Include="WorkflowApi.Core" Version="1.0.0" />
+		<!-- <ProjectReference Include="../../../../../VisualStudio/WorkflowApi.Core/WorkflowApi.Core.csproj" /> -->
   </ItemGroup>
 
 </Project>
