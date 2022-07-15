@@ -42,7 +42,7 @@
 		"run-p": "^0.0.0",
 		"sirv-cli": "^0.4.5",
 		"spassr": "^1.1.2",
-		"svelte": "^3.22.3",
+		"svelte": "^3.49.0",
 		"svelte-preprocess": "^3.4.0",
 		"tailwindcss": "^1.4.6",
 		"workbox": "^0.0.0"
